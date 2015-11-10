@@ -17,15 +17,17 @@ def muSelection(row, name):
     if not getattr( row, getVar(name,'PixHits')):   return False
     if getattr( row, getVar(name,'JetPFCISVBtag')) > 0.8: return False
     #if getattr( row, getVar(name,'JetBtag')) > 3.3: return False #was 3.3 
-    if abs(getattr( row, getVar(name,'DZ'))) > 0.2: return False
+    if abs(getattr( row, getVar(name,'PVDZ'))) > 0.2: return False
     return True
 
 def eSelection(row, name):
     eAbsEta = getattr( row, getVar(name,'AbsEta'))
-    ept = getattr( row, getVar(name,'Pt_ees_minus')) 
-    if ept:
+    
+    try :
+        ept = getattr( row, getVar(name,'Pt_ees_minus')) 
         if ept < 30:           return False 
-    else:
+        
+    except:
         if getattr( row, getVar(name,'Pt')) < 30:   return False #was 20
 
     if eAbsEta > 2.3:      return False
@@ -60,10 +62,10 @@ def eLowPtSelection(row, name):
     return True
     
 def tauSelection(row, name):
-    tpt = getattr( row, getVar(name,'Pt_tes_minus'))
-    if tpt:
+    try:
+        tpt = getattr( row, getVar(name,'Pt_tes_minus'))
         if tpt < 30:           return False 
-    else:
+    except:
         if getattr( row, getVar(name,'Pt')) < 30:          return False
     if getattr( row, getVar(name,'AbsEta')) > 2.3:     return False
     if abs(getattr( row, getVar(name,'PVDZ'))) > 0.2:    return False
@@ -92,7 +94,7 @@ def lepton_id_iso(row, name, label): #label in the format eidtype_isotype
         LEPTON_ID = getattr(row, getVar(name, 'PFIDTight'))
     if not LEPTON_ID:
         return False
-    RelPFIsoDB   = getattr(row, getVar(name, 'RelPFIsoDB'))
+    RelPFIsoDB   = getattr(row, getVar(name, 'RelPFIsoDBDefault'))
     AbsEta       = getattr(row, getVar(name, 'AbsEta'))
     if isolabel == 'h2taucuts':
         return bool( RelPFIsoDB < 0.1 or (RelPFIsoDB < 0.15 and AbsEta < 1.479))

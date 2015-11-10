@@ -37,7 +37,7 @@ samples = Hash[
                "zjets" => get_sample_names('jets_M50'),
                "zjets_skimmedLL" => get_sample_names('jets_M50_skimmedLL'),
                "zjets_skimmedTT" => get_sample_names('jets_M50_skimmedTT'),
-               "diboson" =>get_sample_names('WWJets')+get_sample_names('WZJets')+get_sample_names('ZZJets'),
+               "diboson" =>get_sample_names('WW')+get_sample_names('WZ')+get_sample_names('ZZ'),
                "extra" => Array['T_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola','Tbar_tW-channel-DR_TuneZ2star_8TeV-powheg-tauola','Tbar_t-channel','T_t-channel'],
                "ewk" => Array['Zjets_M50', 
                               'WWJetsTo2L2Nu_TuneZ2_8TeV',
@@ -52,7 +52,8 @@ samples = Hash[
                "ggHiggsTo2Taus" => get_sample_names('GluGluToHToTauTau_M-125_8TeV-powheg-pythia6'),
                "vbfHiggsTo2Taus" => get_sample_names('VBF_HToTauTau_M-125_8TeV-powheg-pythia6'),
                "Zembedded" => get_sample_names('ZetauEmbedded'),
-               "dataSingleE" => get_sample_names('data_SingleElectron_Run2012')
+               "dataSingleE" => get_sample_names('data_SingleElectron_Run2012'),
+               "dataSingleMu" => get_sample_names('data_SingleMuon_Run2015')
                
 ]
 
@@ -88,8 +89,8 @@ exponentialpol1_vars =  "scale[4., 0, 10],decay[-1e-2, -1, -1e-4],offset[1e-2, 0
 landau = "scale*TMath::Landau(x,mu,sigma,0)+offset"
 landau_vars =  "scale[0.5, 0, 15],mu[5, 0, 30],sigma[1.9, 0.1, 20],offset[1e-2, 0, 0.5]"
 
-pol0 = "const"
-pol0_vars = "const[ 0.5, 0, 1]"
+pol0 = "p0"
+pol0_vars = "p0[ 0.5, 0, 1]"
 pol1 = "p0+p1*x"
 pol1_vars = "p0[ 0.5, 0, 1], p1[ -0.1, -1, 1]"
 pol2 = "p0+p1*x+p2*x*x"
@@ -116,12 +117,12 @@ efr_fits      = Hash.new
 #for s in mysamples
 
 fr_fits["t_os_tLoose_tTigh_tPt"] = Hash[ 
-                                          "samples" => Array["diboson",  "dataSingleE"],#, "zjets_skimmedLL"],
+                                          "samples" => Array["diboson",  "dataSingleMu"],#, "zjets_skimmedLL"],
                                           "analyzer" => $fr_analyzer,
                                         #"function" => exponential,
                                           #"variables" => exponential_vars,
                                           "function" => pol0, 
-                                          "variables"=>pol0_vars, 
+                                          "variables"=>pol1_vars, 
                                           #"rebin" => 1,
                                           "rebin" => $fr_binning,
                                           "range" => "30 200",
@@ -145,10 +146,10 @@ efr_fits["e_os_eLoose_eTigh_e3Pt"] = Hash[
                                          ]
 
 fr_fits["t_os_tLoose_tTigh_tAbsEta"] = Hash[ 
-                                              "samples" => Array["diboson",  "dataSingleE", "zjets_skimmedLL"],
+                                              "samples" => Array["diboson",  "dataSingleMu"],#, "zjets_skimmedLL"],
                                               "analyzer" => $fr_analyzer,
-                                              "function" => pol2,
-                                              "variables" => pol2_vars,
+                                              "function" => pol0,
+                                              "variables" => pol0_vars,
                                               "rebin" => 1,
                                               "range" => "0 2.3",
                                               #"range" => "-2.3 2.3",
@@ -343,11 +344,8 @@ task :fakeeet => get_analyzer_results("TauFakeRateAnalyzer.py", samples['signalM
                                       samples['wzjets'] +
                                       samples['zjets'] +   samples['Zembedded']+samples['dataSingleE'])
 
-task :fakeeetMVA => get_analyzer_results("TauFakeRateAnalyzerMVA.py",# samples['signalMCgg'] + samples['signalMCvbf'] + samples['ggHiggsTo2Taus'] + samples['vbfHiggsTo2Taus'] + samples['ttbar'] + samples['singlet'] + samples['singletbar'] + samples['wjets']  + samples['Zembedded'] +
-                                         samples['zjets'] +  
-                                         samples['wwjets']  + samples['zzjets'] + 
-                                         samples['wzjets'] +
-                                         samples['dataSingleE'])
+task :fakemmtMVA => get_analyzer_results("TauFakeRateAnalyzerMVA.py",
+                                         samples['dataSingleMu']+samples['diboson'])
 
 task :fakeeeeMVA => get_analyzer_results("EleFakeRateAnalyzerMVA.py", #samples['signalMCgg'] + samples['signalMCvbf'] + samples['ggHiggsTo2Taus'] + samples['vbfHiggsTo2Taus'] + samples['ttbar'] + samples['singlet'] + samples['singletbar'] + samples['wjets']  +   samples['Zembedded']+
                                          samples['zjets'] +

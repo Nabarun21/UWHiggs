@@ -4,8 +4,9 @@
 import os
 import itertools
 
-#RUN_OPTIMIZATION = ('RUN_OPTIMIZATION' in os.environ) and eval(os.environ['RUN_OPTIMIZATION'])
-RUN_OPTIMIZATION = True
+RUN_OPTIMIZATION = ('RUN_OPTIMIZATION' in os.environ) and eval(os.environ['RUN_OPTIMIZATION'])
+#RUN_OPTIMIZATION = True
+grid_search = {}
 
 _0jets = {
    'tPt'  : range(30,50,10)+[35,45],

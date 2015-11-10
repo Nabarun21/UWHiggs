@@ -16,7 +16,7 @@ from FinalStateAnalysis.PlotTools.RebinView import RebinView
 from FinalStateAnalysis.PlotTools.SubtractionView import SubtractionView
 import glob
 import os
-
+import numpy
 log = logging.getLogger("CorrectFakeRateData")
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
@@ -64,9 +64,23 @@ if __name__ == "__main__":
         for bin in range(x.GetNbinsX()+1):
             binsy = range(x.GetNbinsY()+1) if isinstance(x, ROOT.TH2) else [-1]
             for biny in binsy:
-                nentries = ROOT.TMath.Nint(x.GetBinContent(bin, biny)) \
+                
+                nentries = x.GetBinContent(bin, biny) \
                     if isinstance(x, ROOT.TH2) else \
-                    ROOT.TMath.Nint(x.GetBinContent(bin))
+                    x.GetBinContent(bin)
+                print nentries, numpy.double(nentries)
+                nentries = int(round(nentries))
+                if nentries >= 0:
+                    nentries= int(nentries + 0.5)
+                    if (nentries + 0.5) == numpy.double(nentries) and  (nentries + 0.5) == int(nentries + 0.5) and  (nentries + 0.5)==1:
+                        nentries=-1
+                else:
+                    nentries= int(nentries - 0.5)
+                    if (nentries - 0.5) == numpy.double(nentries) and  (nentries - 0.5) == int(nentries - 0.5) and  (nentries - 0.5)==1:
+                        nentries=+1
+                    
+                #nentries=ROOT.TMath.Nint(numpy.double(nentries))  
+                print 'rounded', nentries
                 centerx = x.GetXaxis().GetBinCenter(bin)
                 centery = x.GetYaxis().GetBinCenter(biny) \
                     if isinstance(x, ROOT.TH2) else \
@@ -97,7 +111,7 @@ if __name__ == "__main__":
         SubtractionView(data, wz_view, zz_view, restrict_positive=True))
 
     log.debug('creating output file')
-    output = io.open(args.outputfile, 'RECREATE')
+    output = io.root_open(args.outputfile, 'RECREATE')
     output.cd()
 
     log.debug('getting from corrected view')
