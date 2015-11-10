@@ -1,0 +1,49 @@
+(in /afs/hep.wisc.edu/user/ndev/CMSSW_7_4_14/src/UWHiggs/lfvemu)
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M120_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/GluGlu_LFV_HToMuTau_M120_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M120_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_GluGlu_LFV_HToMuTau_M120_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M125_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/GluGlu_LFV_HToMuTau_M125_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M125_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_GluGlu_LFV_HToMuTau_M125_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M130_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/GluGlu_LFV_HToMuTau_M130_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M130_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_GluGlu_LFV_HToMuTau_M130_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M200_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/GluGlu_LFV_HToMuTau_M200_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/GluGlu_LFV_HToMuTau_M200_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_GluGlu_LFV_HToMuTau_M200_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M120_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/VBF_LFV_HToMuTau_M120_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M120_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_VBF_LFV_HToMuTau_M120_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M125_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/VBF_LFV_HToMuTau_M125_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M125_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_VBF_LFV_HToMuTau_M125_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M130_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/VBF_LFV_HToMuTau_M130_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M130_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_VBF_LFV_HToMuTau_M130_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M200_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHAnalyzeGEN.py inputs/ntupleTest_12Oct/VBF_LFV_HToMuTau_M200_13TeV_powheg_pythia8.txt results/ntupleTest_12Oct/LFVHAnalyzeGEN/VBF_LFV_HToMuTau_M200_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_ntupleTest_12Oct_LFVHAnalyzeGEN_VBF_LFV_HToMuTau_M200_13TeV_powheg_pythia8.log &
+sleep 10s
