@@ -1,0 +1,177 @@
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root`
+(in /afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_13/src/UWHiggs/lfvemu20fb)
+warning: Insecure world writable dir /afs/hep.wisc.edu/cms/ndev in PATH, mode 040777
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/TT_TuneCUETP8M1_13TeV-powheg-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_TT_TuneCUETP8M1_13TeV-powheg-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_DYJetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_DY1JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_DY2JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_DY3JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/GluGluHToTauTau_M125_13TeV_powheg_pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_DY4JetsToLL_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/VBFHToTauTau_M125_13TeV_powheg_pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/GluGluHToTauTau_M125_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/GluGluHToTauTau_M125_13TeV_powheg_pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/GluGluHToTauTau_M125_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_GluGluHToTauTau_M125_13TeV_powheg_pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/VBFHToTauTau_M125_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/VBFHToTauTau_M125_13TeV_powheg_pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/VBFHToTauTau_M125_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_VBFHToTauTau_M125_13TeV_powheg_pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_W1JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_W2JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_W3JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_W4JetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_WJetsToLNu_TuneCUETP8M1_13TeV-madgraphMLM-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGstarToLNuEE_012Jets_13TeV-madgraph.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_WGToLNuG_TuneCUETP8M1_13TeV-amcatnloFXFX-pythia8.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGstarToLNuMuMu_012Jets_13TeV-madgraph.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGstarToLNuEE_012Jets_13TeV-madgraph.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/WGstarToLNuEE_012Jets_13TeV-madgraph.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGstarToLNuEE_012Jets_13TeV-madgraph.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_WGstarToLNuEE_012Jets_13TeV-madgraph.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGstarToLNuMuMu_012Jets_13TeV-madgraph.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/WGstarToLNuMuMu_012Jets_13TeV-madgraph.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/WGstarToLNuMuMu_012Jets_13TeV-madgraph.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_WGstarToLNuMuMu_012Jets_13TeV-madgraph.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_ST_tW_antitop_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016B.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_ST_tW_top_5f_inclusiveDecays_13TeV-powheg-pythia8_TuneCUETP8M1.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016C.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016B.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/data_SingleMuon_Run2016B.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016B.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_data_SingleMuon_Run2016B.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016D.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016C.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/data_SingleMuon_Run2016C.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016C.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_data_SingleMuon_Run2016C.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016E.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016D.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/data_SingleMuon_Run2016D.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016D.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_data_SingleMuon_Run2016D.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016F.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016E.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/data_SingleMuon_Run2016E.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016E.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_data_SingleMuon_Run2016E.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/GluGlu_LFV_HToETau_M125_13TeV_powheg_pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016F.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/data_SingleMuon_Run2016F.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/data_SingleMuon_Run2016F.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_data_SingleMuon_Run2016F.log &
+sleep 10s
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/VBF_LFV_HToETau_M125_13TeV_powheg_pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/GluGlu_LFV_HToETau_M125_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/GluGlu_LFV_HToETau_M125_13TeV_powheg_pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/GluGlu_LFV_HToETau_M125_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_GluGlu_LFV_HToETau_M125_13TeV_powheg_pythia8.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/VBF_LFV_HToETau_M125_13TeV_powheg_pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTfitBDTttbarbtag.py inputs/Oct30/VBF_LFV_HToETau_M125_13TeV_powheg_pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTfitBDTttbarbtag/VBF_LFV_HToETau_M125_13TeV_powheg_pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTfitBDTttbarbtag_VBF_LFV_HToETau_M125_13TeV_powheg_pythia8.log &
+sleep 10s

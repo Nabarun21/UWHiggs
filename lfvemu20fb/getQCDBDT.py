@@ -58,6 +58,7 @@ BDTvars2 = [
 
 BDT2vars = [
       ('BDT_value', 'BDT_value', 1),
+      ('h_collmass_pfmet', 'M_{coll}(e#mu) (GeV)', 1),
       ('mPt', 'p_{T}(mu) (GeV)', 4),
       ('mEta', 'eta(mu)', 2),
       ('mPhi', 'phi(mu)', 4),
@@ -123,6 +124,9 @@ class GetQCD(object):
 							continue
 						if j!=0 and sys.argv[4]=='BDT' and 'collmass' not in var[0]:
 							continue
+						if j!=0 and sys.argv[4]=='BDT2' and 'collmass' in var[0]:
+							continue
+
 						self.histomc=None
 						self.histodata=None
 						self.histoQCD=None

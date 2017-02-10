@@ -62,11 +62,11 @@ blind   = 'blind' not in os.environ or os.environ['blind'] == 'YES'
 print 'blind?', blind
 blind_region=[100, 150] if blind else None
 #blind_region=[100, 200] if blind else None
-blindpath="antiIsolated/os/.*ass*"
+blindpath="antiIsolated/ss/.*ass*"
 #blind_region=[100, 200] if blind else None
 if 'BDT2' in sys.argv[4]:
     blind_region=[0.0,0.3]
-    blindpath="antiIsolated/os/.*BDT*"
+    blindpath="antiIsolated/ss/.*BDT*"
 
 embedded = False
 print jobid
@@ -198,7 +198,7 @@ if not no_plots:
    else:
        histo_info = [
            ('BDT_value', 'BDT value', 1),
-           ('h_collmass_pfmet', 'M_{coll}(emu) (GeV)', 1),
+           ('h_collmass_pfmet', 'M_{coll}(e#mu) (GeV)', 1),
            ('mPt', 'p_{T}(mu) (GeV)', 4), 
            ('mEta', 'eta(mu)', 2),  
            ('mPhi', 'phi(mu)', 4), 
@@ -239,6 +239,7 @@ if not no_plots:
 #             plotter.save(path+"/vbfDeta",dotroot=True)
            for var, xlabel, rebin in histo_info:
                if 'BDT' not in sys.argv[4] and 'BDT' in var:continue
+#               if 'BDT2' in sys.argv[4] and 'collmass' in var:continue
                logging.debug("Plotting %s/%s" % (path, var) )
                plotter.pad.SetLogy(False)
  #              print var
@@ -249,7 +250,7 @@ if not no_plots:
              
                plotter.plot_mc_vs_data_new(path, var, njet,rebin, xlabel,
                                                     leftside=False, xrange=(-4.0,300.), show_ratio=True, ratio_range=1., 
-                                                    sort=True,br=50)
+                                                    sort=True,br=5)
             
                print "**************************************************************************************************************************************************"
                plotter.save(path+"/"+njet+"_preselection_"+var,dotroot=True)

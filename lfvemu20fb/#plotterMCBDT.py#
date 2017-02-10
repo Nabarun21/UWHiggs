@@ -68,7 +68,7 @@ blindpath="os/.*ass*"
 if 'BDT2' in sys.argv[4] or len(sys.argv)>7:
     blind_region=[0.0,0.3]
     #blindpath="ss/.*BDT*"
-    blindpath="os/.*BDT*"
+    blindpath=''
 embedded = False
 print jobid
 
@@ -216,7 +216,7 @@ if not no_plots:
 
    for var, xlabel, rebin in common_histo_info:
          plotter.plot_mc_vs_data_new('os', var, 'region-I',rebin, xlabel,
-                                                leftside=False, xrange=(-10.0,300.0), show_ratio=True, ratio_range=0.5, 
+                                                leftside=False, xrange=(-10.0,300.0), show_ratio=True, ratio_range=1., 
                                                 sort=True,br=5)
          plotter.save("os/"+var,dotroot=False)
 
@@ -241,8 +241,8 @@ if not no_plots:
          if ( int(njet)==22):
              rebin=rebin*2
          plotter.plot_mc_vs_data_new(path, var, njet,rebin, xlabel,
-                                                leftside=False, xrange=(-10.0,300.0), show_ratio=True, ratio_range=0.5, 
-                                                sort=True,br=5,drawData=isDataDrawn)
+                                                leftside=False, xrange=(-10.0,300.0), show_ratio=True, ratio_range=1., 
+                                                sort=True,br=50,drawData=isDataDrawn)
         
          print "**************************************************************************************************************************************************"
          plotter.save(path+"/"+njet+"_preselection_"+var,dotroot=False)
@@ -264,7 +264,7 @@ if not no_plots:
           plotter.pad.SetLogy(False)
           plotter.plot_mc_vs_data_new(path+'/selected/nosys', var,njet, rebin, xlabel,
                                              leftside=False, xrange=(-10.,300.0), show_ratio=True, ratio_range=1., 
-                                      sort=True,br=5,drawData=isDataDrawn)
+                                      sort=True,br=10,drawData=isDataDrawn)
           
           plotter.save(path+"/selected/"+njet+"_selection_"+var,dotroot=False)
 

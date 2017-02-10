@@ -174,6 +174,9 @@ for sign in ['os','ss','fakeRateMethod/os','fakeRateMethod/ss','antiIsolated/os'
 			     continue
 		     if j!=0 and sys.argv[4]=='BDT' and 'collmass' not in var[0]:
 			     continue
+		     if j!=0 and sys.argv[4]=='BDT2' and 'collmass' in var[0]:
+			     continue
+
 		     jojo= hist_path.split('/')
 		     folder= '/'.join(hist_path.split('/')[0:(len(jojo)-1)])
 		     datafile=ROOT.TFile(Analyzer+"/data_obs.root")

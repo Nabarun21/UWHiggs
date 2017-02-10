@@ -420,6 +420,22 @@ task :runBDTmassFit => get_analyzer_results("LFVHEMuAnalyzerMVABDTmassFit",sampl
 
 task :runBDTfitBDT => get_analyzer_results("LFVHEMuAnalyzerMVABDTfitBDT",samples['signalMCMuTaugg']+samples['signalMCMuTauvbf']+samples['diboson']+samples['ttbar']+samples['DY']+samples['ggHiggsTo2Taus']+samples['vbfHiggsTo2Taus']+samples['wjets']+samples['wg']+samples['singlet']+samples['dataB']+samples['dataC']+samples['dataD']+samples['dataE']+samples['dataF']+samples['signalMCggEtau']+samples['signalMCvbfEtau'])
 
+task :runBDTfitBDTttbarbtag1 => get_analyzer_results("LFVHEMuAnalyzerMVABDTfitBDTttbarbtag",samples['signalMCMuTaugg']+samples['signalMCMuTauvbf']+samples['diboson']+samples['ttbar']+samples['DY']+samples['ggHiggsTo2Taus']+samples['vbfHiggsTo2Taus']+samples['wjets'])
+
+task :runBDTfitBDTttbarbtag2 => get_analyzer_results("LFVHEMuAnalyzerMVABDTfitBDTttbarbtag",samples['wg']+samples['singlet']+samples['dataB']+samples['dataC']+samples['dataD']+samples['dataE']+samples['dataF']+samples['signalMCggEtau']+samples['signalMCvbfEtau'])
+
+
+task :runBDTfitBDTztautau => get_analyzer_results("LFVHEMuAnalyzerMVABDTfitBDTztautau",samples['signalMCMuTaugg']+samples['signalMCMuTauvbf']+samples['diboson']+samples['ttbar']+samples['DY']+samples['ggHiggsTo2Taus']+samples['vbfHiggsTo2Taus']+samples['wjets']+samples['wg']+samples['singlet']+samples['dataB']+samples['dataC']+samples['dataD']+samples['dataE']+samples['dataF']+samples['signalMCggEtau']+samples['signalMCvbfEtau'])
+
+task :runBDTfitBDTttbarxsec => get_analyzer_results("LFVHEMuAnalyzerMVABDTfitBDTttbarxsec",samples['signalMCMuTaugg']+samples['signalMCMuTauvbf']+samples['diboson']+samples['ttbar']+samples['DY']+samples['ggHiggsTo2Taus']+samples['vbfHiggsTo2Taus']+samples['wjets']+samples['wg']+samples['singlet']+samples['dataB']+samples['dataC']+samples['dataD']+samples['dataE']+samples['dataF']+samples['signalMCggEtau']+samples['signalMCvbfEtau'])
+
+
+task :runBDTfitBDTcutBDT => get_analyzer_results("LFVHEMuAnalyzerMVABDTfitBDTcutBDT",samples['signalMCMuTaugg']+samples['signalMCMuTauvbf']+samples['diboson']+samples['ttbar']+samples['DY']+samples['ggHiggsTo2Taus']+samples['vbfHiggsTo2Taus']+samples['wjets']+samples['wg']+samples['singlet'])
+
+
+task :runBDTfitBDTcutBDT2 => get_analyzer_results("LFVHEMuAnalyzerMVABDTfitBDTcutBDT",samples['dataB']+samples['dataC']+samples['dataD']+samples['dataE']+samples['dataF']+samples['signalMCggEtau']+samples['signalMCvbfEtau'])
+
+
 task :runBDTmassFitv3 => get_analyzer_results("LFVHEMuAnalyzerMVABDTmassFitv3",samples['signalMCMuTaugg']+samples['signalMCMuTauvbf']+samples['diboson']+samples['ttbar']+samples['DY']+samples['ggHiggsTo2Taus']+samples['vbfHiggsTo2Taus']+samples['wjets']+samples['wg']+samples['singlet']+samples['dataB']+samples['dataC']+samples['dataD']+samples['dataE']+samples['dataF']+samples['signalMCggEtau']+samples['signalMCvbfEtau'])
 
 task :runBDTmassFitv3 => get_analyzer_results("LFVHEMuAnalyzerMVABDTmassFitv3",samples['signalMCMuTaugg']+samples['signalMCMuTauvbf']+samples['diboson']+samples['ttbar']+samples['DY']+samples['ggHiggsTo2Taus']+samples['vbfHiggsTo2Taus']+samples['wjets']+samples['wg']+samples['singlet']+samples['dataB']+samples['dataC']+samples['dataD']+samples['dataE']+samples['dataF']+samples['signalMCggEtau']+samples['signalMCvbfEtau'])
