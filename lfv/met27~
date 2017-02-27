@@ -1,0 +1,9 @@
+mkdir -p `dirname results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8_v6-v1.root`
+(in /afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_26_patch1/src/UWHiggs/lfv)
+warning: Insecure world writable dir /afs/hep.wisc.edu/cms/ndev in PATH, mode 040777
+#using farmout:1
+#dry run:1
+export megatarget=results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8_v6-v1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTmet27.py inputs/LFV_feb18_mc/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8_v6-v1.txt results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27/VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8_v6-v1.root --verbose >& batch_logs/results_LFV_feb18_mc_LFVHEMuAnalyzerMVABDTmet27_VVTo2L2Nu_13TeV_amcatnloFXFX_madspin_pythia8_v6-v1.log &
+sleep 10s

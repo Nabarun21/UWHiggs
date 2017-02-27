@@ -1,0 +1,150 @@
+Traceback (most recent call last):
+  File "plotterMCBDT.py", line 1, in <module>
+    import rootpy.plotting.views as views
+  File "/afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_13/src/FinalStateAnalysis/recipe/external/src/rootpy/rootpy/__init__.py", line 24, in <module>
+    import ROOT as R
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/lcg/root/6.06.00-ikhhed4/lib/ROOT.py", line 24, in <module>
+    import cppyy
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/lcg/root/6.06.00-ikhhed4/lib/cppyy.py", line 60, in <module>
+    import libPyROOT as _backend
+KeyboardInterrupt
+mkdir -p `dirname results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27ttbarxsec/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1.root`
+(in /afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_26_patch1/src/UWHiggs/lfv)
+warning: Insecure world writable dir /afs/hep.wisc.edu/cms/ndev in PATH, mode 040777
+time mega LFVHEMuAnalyzerMVABDTmet27ttbarxsec.py inputs/LFV_feb18_mc/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1.txt results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27ttbarxsec/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1.root --workers 2 --chain 10
+#using farmout:0
+#dry run:0
+WARNING:ROOT.TClassTable.Add] class RooDataHistEffBuilder already in TClassTable
+WARNING:ROOT.TClassTable.Add] class RooCruijff already in TClassTable
+scaling data
+Processed 0/977 files. ETA:  --:--:--|                                        |Processed 10/977 files. ETA:  0:26:02|                                        |[TFile::Cp] Total 0.19 MB	|>...................| 0.00 % [0.0 MB/s][TFile::Cp] Total 0.19 MB	|====================| 100.00 % [196.1 MB/s]
+Processed 20/977 files. ETA:  0:14:03|                                        |Processed 30/977 files. ETA:  0:17:00|>                                       |Processed 40/977 files. ETA:  0:12:48|>                                       |Processed 50/977 files. ETA:  0:14:53|>>                                      |Processed 60/977 files. ETA:  0:12:53|>>                                      |Processed 70/977 files. ETA:  0:15:17|>>                                      |Processed 80/977 files. ETA:  0:15:44|>>>                                     |Processed 90/977 files. ETA:  0:14:22|>>>                                     |Processed 100/977 files. ETA:  0:14:24|>>>                                    |Processed 110/977 files. ETA:  0:13:33|>>>>                                   |Processed 120/977 files. ETA:  0:13:45|>>>>                                   |Processed 130/977 files. ETA:  0:12:59|>>>>>                                  |Processed 140/977 files. ETA:  0:13:18|>>>>>                                  |Processed 150/977 files. ETA:  0:12:30|>>>>>                                  |Processed 160/977 files. ETA:  0:12:47|>>>>>>                                 |Processed 170/977 files. ETA:  0:12:04|>>>>>>                                 |Processed 180/977 files. ETA:  0:12:18|>>>>>>>                                |Processed 190/977 files. ETA:  0:11:33|>>>>>>>                                |ERROR:ROOT.TFile.TFile] file results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27ttbarxsec/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1.root does not exist
+ERROR:ROOT.TFileMerger.AddFile] cannot open file results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27ttbarxsec/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1.root
+Process MegaMerger-3:
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/python/2.7.11-ikhhed2/lib/python2.7/multiprocessing/process.py", line 258, in _bootstrap
+    self.run()
+  File "/afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_26_patch1/python/FinalStateAnalysis/PlotTools/MegaMerger.py", line 114, in run
+    self.merge_into_output(files_to_merge)
+  File "/afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_26_patch1/python/FinalStateAnalysis/PlotTools/MegaMerger.py", line 59, in merge_into_output
+    merger.AddFile(file, False)
+  File "/afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_26_patch1/python/FinalStateAnalysis/PlotTools/MegaMerger.py", line 59, in merge_into_output
+    merger.AddFile(file, False)
+  File "/afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_26_patch1/src/FinalStateAnalysis/recipe/external/src/rootpy/rootpy/logger/magic.py", line 247, in intercept_next_line
+    raise exception
+ROOTError: level=3000, loc='TFile::TFile', msg='file results/LFV_feb18_mc/LFVHEMuAnalyzerMVABDTmet27ttbarxsec/TT_TuneCUETP8M2T4_13TeV-powheg-pythia8_v6-v1.root does not exist'
+9653.33778433     9660
+9537.17570795     9549
+9616.1463293     9624
+9857.75436301     9861
+10218.2453195     10230
+10081.0152659     10092
+9929.11218791     9924
+8984.41429264     8988
+9518.23510364     9525
+9136.77418714     9135
+9090.01602128     9087
+10131.4736642     10146
+10397.672997     10407
+8896.9414614     8898
+9189.57333599     9198
+9140.44155932     9141
+9038.47514639     9042
+9965.10543983     9969
+10272.4048171     10278
+10892.7894336     10896
+9433.33940989     9429
+10675.7730098     10680
+10195.5028032     10188
+10335.8219747     10332
+8394.31093767     8394
+10220.5704621     10218
+11469.3810613     11475
+8605.83886283     8610
+9621.03345628     9621
+9316.04660967     9309
+9153.40690607     9159
+9872.00631761     9876
+10244.1657315     10248
+9461.64034597     9456
+9427.85732692     9435
+10397.1521694     10401
+9435.53205503     9429
+10456.2654603     10461
+8815.79686293     8814
+8934.49355066     8934
+8675.3646748     8679
+8296.26601553     8292
+11024.6421923     11025
+9608.30182565     9612
+9917.15809423     9915
+9372.91804825     9375
+8972.06825125     8979
+9441.51322453     9453
+9804.05749779     9804
+5004.74187094     5004
+8877.82425195     8898
+9714.97713621     9711
+9531.87964293     9537
+8261.1375362     8256
+8995.94736322     8982
+9393.79709661     9393
+9920.16587532     9924
+9787.49542147     9786
+9137.40755903     9132
+8931.8908534     8931
+8936.85480317     8943
+10172.5310591     10179
+10009.7827817     10008
+8454.64911943     8463
+9491.82291348     9492
+9439.32374235     9441
+9922.50641353     9921
+9535.39322529     9537
+10625.1781613     10629
+9502.84638628     9501
+9265.03271645     9270
+10036.3539652     10032
+8382.72627137     8391
+10083.5903361     10089
+9407.09643118     9417
+9587.98682926     9588
+8941.05412863     8949
+8345.13614933     8340
+10131.7212463     10134
+9772.9535435     9768
+9775.06404724     9774
+9114.68573691     9108
+9544.97789651     9540
+9080.38276135     9090
+10700.1366887     10698
+10333.8976289     10341
+9901.73883315     9906
+8323.82799727     8319
+9682.09958304     9684
+9532.24149571     9528
+9072.34487455     9072
+9524.83793569     9528
+7549.52258755     7536
+10522.4106537     10521
+9973.15812714     9975
+10486.4214445     10500
+9547.0320886     9555
+9537.74182312     9531
+ERROR:ROOT.TUnixSystem.DispatchSignals] write on a pipe with no one to read it
+ERROR:stack] File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/python/2.7.11-ikhhed2/lib/python2.7/threading.py", line 774, in __bootstrap
+ERROR:stack]   self.__bootstrap_inner()
+ERROR:stack] File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/python/2.7.11-ikhhed2/lib/python2.7/threading.py", line 801, in __bootstrap_inner
+ERROR:stack]   self.run()
+ERROR:stack] File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/python/2.7.11-ikhhed2/lib/python2.7/threading.py", line 754, in run
+ERROR:stack]   self.__target(*self.__args, **self.__kwargs)
+ERROR:stack] File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/python/2.7.11-ikhhed2/lib/python2.7/multiprocessing/queues.py", line 268, in _feed
+ERROR:stack]   send(obj)
+Traceback (most recent call last):
+  File "/cvmfs/cms.cern.ch/slc6_amd64_gcc530/external/python/2.7.11-ikhhed2/lib/python2.7/multiprocessing/queues.py", line 268, in _feed
+    send(obj)
+  File "/afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_26_patch1/src/FinalStateAnalysis/recipe/external/src/rootpy/rootpy/logger/magic.py", line 247, in intercept_next_line
+    raise exception
+ROOTError: level=4000, loc='TUnixSystem::DispatchSignals', msg='write on a pipe with no one to read it'
+1059.13user 39.57system 16:51.45elapsed 108%CPU (0avgtext+0avgdata 277256maxresident)k
+642792inputs+70280outputs (2783major+390615minor)pagefaults 0swaps

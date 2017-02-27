@@ -1,0 +1,12 @@
+mkdir -p `dirname results/SMHTT_jan31/LFVHEMuAnalyzerMVABDTmpt27/GluGlu_LFV_HToMuTau_M125_13TeV_powheg_pythia8_v6-v1.root`
+(in /afs/hep.wisc.edu/cms/ndev/CMSSW_8_0_25/src/UWHiggs/lfvemu36jes)
+warning: Insecure world writable dir /afs/hep.wisc.edu/cms/ndev in PATH, mode 040777
+time mega LFVHEMuAnalyzerMVABDTmpt27.py inputs/SMHTT_jan31/GluGlu_LFV_HToMuTau_M125_13TeV_powheg_pythia8_v6-v1.txt results/SMHTT_jan31/LFVHEMuAnalyzerMVABDTmpt27/GluGlu_LFV_HToMuTau_M125_13TeV_powheg_pythia8_v6-v1.root --workers 2 --chain 10
+#using farmout:0
+#dry run:1
+rake aborted!
+SIGTERM
+rake aborted!
+undefined method `find' for nil:NilClass
+
+(See full trace by running task with --trace)

@@ -1,0 +1,42 @@
+mkdir -p `dirname results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext1-v2.root`
+mkdir -p `dirname results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext2-v1.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext1-v2.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTjes27.py inputs/SMHTT_mc_feb13/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext1-v2.txt results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext1-v2.root --verbose >& batch_logs/results_SMHTT_mc_feb13_LFVHEMuAnalyzerMVABDTjes27_ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext1-v2.log &
+sleep 10s
+mkdir -p `dirname results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau1Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext2-v1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTjes27.py inputs/SMHTT_mc_feb13/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext2-v1.txt results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext2-v1.root --verbose >& batch_logs/results_SMHTT_mc_feb13_LFVHEMuAnalyzerMVABDTjes27_ZTauTauJets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6_ext2-v1.log &
+sleep 10s
+mkdir -p `dirname results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau2Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau1Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTjes27.py inputs/SMHTT_mc_feb13/ZTauTau1Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.txt results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau1Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root --verbose >& batch_logs/results_SMHTT_mc_feb13_LFVHEMuAnalyzerMVABDTjes27_ZTauTau1Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.log &
+sleep 10s
+mkdir -p `dirname results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau3Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau2Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTjes27.py inputs/SMHTT_mc_feb13/ZTauTau2Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.txt results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau2Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root --verbose >& batch_logs/results_SMHTT_mc_feb13_LFVHEMuAnalyzerMVABDTjes27_ZTauTau2Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.log &
+sleep 10s
+mkdir -p `dirname results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau4Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau3Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTjes27.py inputs/SMHTT_mc_feb13/ZTauTau3Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.txt results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau3Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root --verbose >& batch_logs/results_SMHTT_mc_feb13_LFVHEMuAnalyzerMVABDTjes27_ZTauTau3Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.log &
+sleep 10s
+#using farmout:1
+#dry run:1
+export megatarget=results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau4Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTjes27.py inputs/SMHTT_mc_feb13/ZTauTau4Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.txt results/SMHTT_mc_feb13/LFVHEMuAnalyzerMVABDTjes27/ZTauTau4Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.root --verbose >& batch_logs/results_SMHTT_mc_feb13_LFVHEMuAnalyzerMVABDTjes27_ZTauTau4Jets_M-50_TuneCUETP8M1_13TeV-madgraphMLM-pythia8_v6-v1.log &
+sleep 10s
