@@ -1,0 +1,7 @@
+mkdir -p `dirname results/Oct30/LFVHEMuAnalyzerMVABDTmassFit/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root`
+#using farmout:1
+#dry run:1
+export megatarget=results/Oct30/LFVHEMuAnalyzerMVABDTmassFit/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root
+mkdir -p batch_logs
+mega-farmout LFVHEMuAnalyzerMVABDTmassFit.py inputs/Oct30/TT_TuneCUETP8M1_13TeV-powheg-pythia8.txt results/Oct30/LFVHEMuAnalyzerMVABDTmassFit/TT_TuneCUETP8M1_13TeV-powheg-pythia8.root --verbose >& batch_logs/results_Oct30_LFVHEMuAnalyzerMVABDTmassFit_TT_TuneCUETP8M1_13TeV-powheg-pythia8.log &
+sleep 10s
