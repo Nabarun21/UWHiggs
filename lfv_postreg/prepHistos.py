@@ -503,7 +503,7 @@ for sign in regions_common:
 	    lowDataBin = 1
 	    highDataBin = 1
 
-
+	    i=1
 	    rebin=var[2]
 	    print hist_path,"     ",rebin
 	    if 'collmass' in var[0] or "MtToPfMet" in var[0] or "vismass" in var[0]:
@@ -516,17 +516,14 @@ for sign in regions_common:
 		    if ( i==3):
 			    rebin=25
 	    elif "BDT" in var[0]:
-		    if (i==0):
-			    rebin=binning
-		    elif (i==1):
-			    rebin=binning1jet
-		    else:
-			    rebin=binning2jet
+		    rebin=binning
 	    else:
 		    if (i==2):
 			    rebin = rebin*2
 		    if ( i==3 or  i==1 ):
 			    rebin=rebin*2
+
+	    
 
 	    datafile=ROOT.TFile(Analyzer+"/data_obs.root","UPDATE")
 	    data_histo=datafile.Get(hist_path)

@@ -1813,6 +1813,7 @@ class BasePlotter(Plotter):
         elif drawLegend:
             self.add_legend([sig[0],sig[1],mc_stack], leftside, entries=len(mc_stack.GetHists())+3)
         self.add_cms_blurb(13,category)
+        show_ratio=False
         if show_ratio and drawData:
             self.add_ratio_plot(data, mc_stack, variable,category,xrange, ratio_range=0.50,sel=selec,os=oppsign)
 

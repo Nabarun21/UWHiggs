@@ -312,23 +312,11 @@ class GetQCD(object):
 
 						rebin=var[2]
 						if 'collmass' in var[0] or "MtToPfMet" in var[0] or "vismass" in var[0]:
-							if (i==0 ):
-								rebin =10
-							if ( i==1):
-								rebin=10
-							if ( i==2):
-								rebin=25
-							if ( i==3):
-								rebin=25
+							rebin =10
 						elif "BDT" in var[0]:
-							  if (i==0):
-								  self.histoQCD=self.histoQCD.Rebin(len(binning)-1,"",binning)
-							  elif (i==1):
-								  self.histoQCD=self.histoQCD.Rebin(len(binning1jet)-1,"",binning1jet)
-							  else:
-								  self.histoQCD=self.histoQCD.Rebin(len(binning2jet)-1,"",binning2jet)
+							self.histoQCD=self.histoQCD.Rebin(len(binning)-1,"",binning)
 						else:
-							if (i==2):
+							if (i==2 or i==0):
 								rebin = rebin*2
 							if ( i==3 or  i==1 ):
 								rebin=rebin*2
